@@ -6244,6 +6244,21 @@ Contents
     .modal .modal-dialog img {
       width: 600px; }
 
+.panel-default {
+  border: none; }
+  .panel-default .panel-heading {
+    color: #222222;
+    background-color: white;
+    border-color: #009933;
+    border-width: 5px; }
+
+.well {
+  background-color: white;
+  padding: 5px;
+  margin: 0 15px 10px 0;
+  border-color: #222222;
+  border-width: 5px; }
+
 .navbar-default {
   height: 80px;
   background-color: white;

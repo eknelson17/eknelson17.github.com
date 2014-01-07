@@ -38,6 +38,25 @@ Contents
   }
 }
 
+.panel-default {
+  border: none;
+
+   .panel-heading {
+    color: $gray-darker;
+    background-color: $white;
+    border-color: $brand-primary;
+    border-width: 5px;
+  }
+}
+
+.well {
+  background-color: $white;
+  padding: 5px; 
+  margin: 0 15px 10px 0;
+  border-color: $gray-darker;
+  border-width: 5px;
+}
+
 // 2. Navigation
 // --------------------------------------------------
 .navbar-default {
