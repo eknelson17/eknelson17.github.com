@@ -1,0 +1,74 @@
+/*
+
+Contents
+================================
+
+1. Imports
+2. Navigation
+3. Pages
+4. Shared Styles
+
+================================
+
+*/
+
+$white: #FFFFFF !default;
+
+// 1. Theming
+// --------------------------------------------------
+
+body { 
+  padding-top: 70px;
+}
+
+.jumbotron {
+  background-color: $brand-primary;
+}
+
+// 2. Navigation
+// --------------------------------------------------
+.navbar-default {
+  @extend .navbar-fixed-top;
+  @extend .col-xs-12;
+
+  height: 70px;
+  background-color: $white;
+  // border-top: 7px solid $brand-primary;
+  border-bottom: none;
+
+  .navbar-nav {
+    @extend .navbar-right;
+
+    li.active {
+      a, a:focus, a:hover {
+        border-bottom: 5px solid $brand-primary;
+        background-color: $white;
+      }
+    }
+
+    li a {
+      font-size: 24px;
+      line-height: 1.2em;
+
+      &:hover {
+        background-color: $white;
+        border-bottom: 5px solid $gray-darker;
+      }
+    }
+
+    ul.dropdown-menu {
+      li a {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+// 3. Pages
+// --------------------------------------------------
+
+
+// 4. Shared Styles
+// --------------------------------------------------
+$footer-background: $gray-darker;
