@@ -1,6 +1,8 @@
 $(document).ready(function() {
-  $(".navbar-default .nav li").click(function(e) {
-    $(".navbar-default .nav li").removeClass('active');
-    $(this).addClass('active');
-  })
+  $('li.active ul li').removeClass('active');
+
+  // Modals
+  // $('#daleks').modal();
+  // $('#monkey').modal();
+  // $('#london').modal();
 });

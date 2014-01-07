@@ -5,7 +5,9 @@
     "css/style.css"
   ],
   "js": [
-    "js/svgeezy.js",
+    "js/jQuery.min.js",
+    "js/bootstrap.min.js",
+    "js/ekko-lightbox.js",
     "js/custom.js"
   ],
   "devDependencies": {

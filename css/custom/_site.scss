@@ -3,7 +3,7 @@
 Contents
 ================================
 
-1. Imports
+1. Bootstrap Theming
 2. Navigation
 3. Pages
 4. Shared Styles
@@ -12,53 +12,83 @@ Contents
 
 */
 
-$white: #FFFFFF !default;
-
-// 1. Theming
+// 1. Bootstrap Theming
 // --------------------------------------------------
-
-body { 
-  padding-top: 70px;
-}
 
 .jumbotron {
   background-color: $brand-primary;
+  color: $white;
+  padding-top: 16px;
+  padding-bottom: 27px;
+
+  h1 {
+    font-size: 48px;
+  }
+}
+
+.modal {
+  @include box-shadow(none);
+  
+  .modal-dialog {
+    padding: 70px 0 0;
+
+    img { // Dirty fix - upload resized image with green name and dark grey number
+      width: 600px;
+    }
+  }
 }
 
 // 2. Navigation
 // --------------------------------------------------
 .navbar-default {
-  @extend .navbar-fixed-top;
+  // @extend .navbar-fixed-top;
+  @extend .navbar-static-top;
+  @extend .container;
   @extend .col-xs-12;
 
-  height: 70px;
+  height: 80px;
   background-color: $white;
-  // border-top: 7px solid $brand-primary;
   border-bottom: none;
+
+  .navbar-brand {
+    padding: 0;
+
+    img { // Dirty fix - upload resized image with green name and dark grey number
+      height: 100px;
+    }
+  }
 
   .navbar-nav {
     @extend .navbar-right;
+    padding-top: 15px;
 
     li.active {
       a, a:focus, a:hover {
-        border-bottom: 5px solid $brand-primary;
+        color: $brand-primary;
         background-color: $white;
       }
     }
 
     li a {
       font-size: 24px;
-      line-height: 1.2em;
+      line-height: 1.5em;
 
       &:hover {
         background-color: $white;
-        border-bottom: 5px solid $gray-darker;
       }
     }
 
     ul.dropdown-menu {
+      @include box-shadow(none);
       li a {
         font-size: 16px;
+        color: $black;
+
+        &:hover {
+          background-color: $white;
+          color: $brand-primary;
+          border-bottom: none;
+        }
       }
     }
   }
@@ -71,4 +101,44 @@ body {
 
 // 4. Shared Styles
 // --------------------------------------------------
-$footer-background: $gray-darker;
+
+footer {
+  background-color: $gray-darker;
+  color: $white;
+  margin-top: 30px;
+  padding: 15px 0;
+
+  a .fa {
+    padding-right: 5px;
+  }
+
+  p {
+    padding-top: 15px;
+    line-height: 2em;
+  }
+}
+
+.img-list {
+  @extend .row;
+  margin-top: 22px;
+
+  .img-col {
+    @include make-sm-column(3);
+    @include make-sm-column-offset(1.5);
+
+    .multi-img {
+      margin-top: 5px;
+    }
+  }
+  .text-col {
+    @include make-sm-column(6);
+    
+    h2 {
+      margin-top: 0px;
+    }
+  }
+  .no-img {
+    @include make-sm-column(6);
+    @include make-sm-column-offset(4.5);
+  }
+}

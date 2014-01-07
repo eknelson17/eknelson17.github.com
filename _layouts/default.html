@@ -8,6 +8,7 @@
 		<meta name="viewport" content="user-scalable=no"> <!-- prevents browser zoom on small devices -->
 		<link rel="author" href="humans.txt">
 		<meta name="description" content="Emma Nelson's Profile Website">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/styles.css">
 	    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		
@@ -20,18 +21,24 @@
     </nav>
 
 		<header role="banner">
-
+			<div class="jumbotron">
+			  <div class="container">
+			    <h1>{{page.banner-title}}</h1>
+			    <p>{{page.banner-content}}</p>
+			  </div>
+			</div>
 		</header>
 
 		{{ content }}
 
 		<footer role="contentinfo">
-
+			{% include footer.html %}
 		</footer>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 		<script>if (!window.jQuery) {document.write('<script src="/js/jquery.min.js"><\/script>');}</script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/ekko-lightbox.js"></script>
 		<!--<script src="js/scripts.min.js"></script>-->
 		<script src="js/custom.js"></script>
 

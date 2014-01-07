@@ -558,28 +558,28 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container {
+.container, .navbar-default {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .container:before, .container:after {
+  .container:before, .navbar-default:before, .container:after, .navbar-default:after {
     content: " ";
     /* 1 */
     display: table;
     /* 2 */ }
-  .container:after {
+  .container:after, .navbar-default:after {
     clear: both; }
 
-.row {
+.row, .img-list {
   margin-left: -15px;
   margin-right: -15px; }
-  .row:before, .row:after {
+  .row:before, .img-list:before, .row:after, .img-list:after {
     content: " ";
     /* 1 */
     display: table;
     /* 2 */ }
-  .row:after {
+  .row:after, .img-list:after {
     clear: both; }
 
 .col-xs-1,
@@ -686,7 +686,7 @@ pre {
   width: 100%; }
 
 @media (min-width: 768px) {
-  .container {
+  .container, .navbar-default {
     max-width: 750px; }
 
   .col-sm-1,
@@ -837,7 +837,7 @@ pre {
   .col-sm-offset-11 {
     margin-left: 91.66667%; } }
 @media (min-width: 992px) {
-  .container {
+  .container, .navbar-default {
     max-width: 970px; }
 
   .col-md-1,
@@ -997,7 +997,7 @@ pre {
   .col-md-offset-11 {
     margin-left: 91.66667%; } }
 @media (min-width: 1200px) {
-  .container {
+  .container, .navbar-default {
     max-width: 1170px; }
 
   .col-lg-1,
@@ -3017,34 +3017,36 @@ input[type="button"].btn-block {
       .navbar-collapse .navbar-text:last-child {
         margin-right: 0; } }
 
-.container > .navbar-header,
-.container > .navbar-collapse {
+.container > .navbar-header, .navbar-default > .navbar-header,
+.container > .navbar-collapse,
+.navbar-default > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px; }
   @media (min-width: 768px) {
-    .container > .navbar-header,
-    .container > .navbar-collapse {
+    .container > .navbar-header, .navbar-default > .navbar-header,
+    .container > .navbar-collapse,
+    .navbar-default > .navbar-collapse {
       margin-right: 0;
       margin-left: 0; } }
 
-.navbar-static-top {
+.navbar-static-top, .navbar-default {
   border-width: 0 0 1px; }
   @media (min-width: 768px) {
-    .navbar-static-top {
+    .navbar-static-top, .navbar-default {
       border-radius: 0; } }
 
-.navbar-fixed-top, .navbar-default,
+.navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
   right: 0;
   left: 0;
   border-width: 0 0 1px; }
   @media (min-width: 768px) {
-    .navbar-fixed-top, .navbar-default,
+    .navbar-fixed-top,
     .navbar-fixed-bottom {
       border-radius: 0; } }
 
-.navbar-fixed-top, .navbar-default {
+.navbar-fixed-top {
   z-index: 1030;
   top: 0; }
 
@@ -3060,7 +3062,7 @@ input[type="button"].btn-block {
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
   @media (min-width: 768px) {
-    .navbar > .container .navbar-brand {
+    .navbar > .container .navbar-brand, .navbar > .navbar-default .navbar-brand {
       margin-left: -15px; } }
 
 .navbar-toggle {
@@ -3516,13 +3518,13 @@ a.list-group-item.active > .badge,
     color: inherit; }
   .jumbotron p {
     line-height: 1.4; }
-  .container .jumbotron {
+  .container .jumbotron, .navbar-default .jumbotron {
     border-radius: 0px; }
   @media screen and (min-width: 768px) {
     .jumbotron {
       padding-top: 48px;
       padding-bottom: 48px; }
-      .container .jumbotron {
+      .container .jumbotron, .navbar-default .jumbotron {
         padding-left: 60px;
         padding-right: 60px; }
       .jumbotron h1 {
@@ -3961,7 +3963,7 @@ button.close {
 
 .modal-open {
   overflow: hidden; }
-  .modal-open .navbar-fixed-top, .modal-open .navbar-default,
+  .modal-open .navbar-fixed-top,
   .modal-open .navbar-fixed-bottom {
     margin-right: 15px; }
 
@@ -4038,11 +4040,11 @@ body.modal-open {
 
 .modal-body {
   position: relative;
-  padding: 20px; }
+  padding: 0; }
 
 .modal-footer {
   margin-top: 15px;
-  padding: 19px 20px 20px;
+  padding: -1 0 0;
   text-align: right;
   border-top: 1px solid #e5e5e5; }
   .modal-footer:before, .modal-footer:after {
@@ -6218,7 +6220,7 @@ td.visible-print {
 Contents
 ================================
 
-1. Imports
+1. Bootstrap Theming
 2. Navigation
 3. Pages
 4. Shared Styles
@@ -6226,24 +6228,98 @@ Contents
 ================================
 
 */
-body {
-  padding-top: 70px; }
-
 .jumbotron {
-  background-color: #009933; }
+  background-color: #009933;
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 27px; }
+  .jumbotron h1 {
+    font-size: 48px; }
+
+.modal {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  .modal .modal-dialog {
+    padding: 70px 0 0; }
+    .modal .modal-dialog img {
+      width: 600px; }
 
 .navbar-default {
-  height: 70px;
+  height: 80px;
   background-color: white;
   border-bottom: none; }
-  .navbar-default .navbar-nav li.active a, .navbar-default .navbar-nav li.active a:focus, .navbar-default .navbar-nav li.active a:hover {
-    border-bottom: 5px solid #009933;
-    background-color: white; }
-  .navbar-default .navbar-nav li a {
-    font-size: 24px;
-    line-height: 1.2em; }
-    .navbar-default .navbar-nav li a:hover {
-      background-color: white;
-      border-bottom: 5px solid #222222; }
-  .navbar-default .navbar-nav ul.dropdown-menu li a {
-    font-size: 16px; }
+  .navbar-default .navbar-brand {
+    padding: 0; }
+    .navbar-default .navbar-brand img {
+      height: 100px; }
+  .navbar-default .navbar-nav {
+    padding-top: 15px; }
+    .navbar-default .navbar-nav li.active a, .navbar-default .navbar-nav li.active a:focus, .navbar-default .navbar-nav li.active a:hover {
+      color: #009933;
+      background-color: white; }
+    .navbar-default .navbar-nav li a {
+      font-size: 24px;
+      line-height: 1.5em; }
+      .navbar-default .navbar-nav li a:hover {
+        background-color: white; }
+    .navbar-default .navbar-nav ul.dropdown-menu {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+      .navbar-default .navbar-nav ul.dropdown-menu li a {
+        font-size: 16px;
+        color: black; }
+        .navbar-default .navbar-nav ul.dropdown-menu li a:hover {
+          background-color: white;
+          color: #009933;
+          border-bottom: none; }
+
+footer {
+  background-color: #222222;
+  color: white;
+  margin-top: 30px;
+  padding: 15px 0; }
+  footer a .fa {
+    padding-right: 5px; }
+  footer p {
+    padding-top: 15px;
+    line-height: 2em; }
+
+.img-list {
+  margin-top: 22px; }
+  .img-list .img-col {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .img-list .img-col {
+        float: left;
+        width: 25%; } }
+    @media (min-width: 768px) {
+      .img-list .img-col {
+        margin-left: 12.5%; } }
+    .img-list .img-col .multi-img {
+      margin-top: 5px; }
+  .img-list .text-col {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .img-list .text-col {
+        float: left;
+        width: 50%; } }
+    .img-list .text-col h2 {
+      margin-top: 0px; }
+  .img-list .no-img {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .img-list .no-img {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 768px) {
+      .img-list .no-img {
+        margin-left: 37.5%; } }
