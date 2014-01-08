@@ -571,15 +571,15 @@ pre {
   .container:after, .navbar-default:after {
     clear: both; }
 
-.row, .img-list {
+.row, .img-row-3, .img-list {
   margin-left: -15px;
   margin-right: -15px; }
-  .row:before, .img-list:before, .row:after, .img-list:after {
+  .row:before, .img-row-3:before, .img-list:before, .row:after, .img-row-3:after, .img-list:after {
     content: " ";
     /* 1 */
     display: table;
     /* 2 */ }
-  .row:after, .img-list:after {
+  .row:after, .img-row-3:after, .img-list:after {
     clear: both; }
 
 .col-xs-1,
@@ -6228,6 +6228,9 @@ Contents
 ================================
 
 */
+.blueimp-gallery .prev, .blueimp-gallery .next {
+  border: none; }
+
 .jumbotron {
   background-color: #009933;
   color: white;
@@ -6288,6 +6291,20 @@ Contents
           color: #009933;
           border-bottom: none; }
 
+.img-row-3 {
+  margin: 15px 0; }
+  .img-row-3 .img-col {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .img-row-3 .img-col {
+        float: left;
+        width: 33.33333%; } }
+    .img-row-3 .img-col .thumbnail {
+      max-height: 200px; }
+
 footer {
   background-color: #222222;
   color: white;
@@ -6310,9 +6327,6 @@ footer {
       .img-list .img-col {
         float: left;
         width: 25%; } }
-    @media (min-width: 768px) {
-      .img-list .img-col {
-        margin-left: 12.5%; } }
     .img-list .img-col .multi-img {
       margin-top: 5px; }
   .img-list .text-col {
@@ -6323,7 +6337,10 @@ footer {
     @media (min-width: 768px) {
       .img-list .text-col {
         float: left;
-        width: 50%; } }
+        width: 70.83333%; } }
+    @media (min-width: 768px) {
+      .img-list .text-col {
+        margin-left: 4.16667%; } }
     .img-list .text-col h2 {
       margin-top: 0px; }
   .img-list .no-img {
@@ -6334,7 +6351,7 @@ footer {
     @media (min-width: 768px) {
       .img-list .no-img {
         float: left;
-        width: 50%; } }
+        width: 70.83333%; } }
     @media (min-width: 768px) {
       .img-list .no-img {
-        margin-left: 37.5%; } }
+        margin-left: 29.16667%; } }

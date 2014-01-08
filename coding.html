@@ -5,5 +5,123 @@ banner-title: Coding Projects
 ---
 
 <div class="container">
-  Coming Soon!
+
+  <h2>popHealth</h2>
+  <p>
+    "popHealth is an open source reference implementation software service that automates the reporting of Meaningful Use quality measures. popHealth integrates with a healthcare provider’s electronic health record (EHR) system using continuity of care records. popHealth streamlines the automated generation of summary quality measure reports on the provider’s patient population." - <a href="projectpophealth.org">projectpophealth.org</a>
+  </p>
+  <p>
+    I worked on popHealth as a part of the MITRE development team. I am on the UI team and have been working on implementing a modern, cohesive design that takes full advantage of what today's technology offers. The tech stack includes Bootstrap 3, LESS, Thorax.js, CoffeeScript, Ruby on Rails and MongoDB. I worked on creating and maintaining a custom Bootstrap theme in LESS, pruning the initial dashboard and creating various client-side thorax modules.
+  </p>
+  <p>
+    You can check out the source code on <a href="http://github.com/pophealth/popHealth">GitHub</a>. <a href="projectpophealth.org">projectpophealth.org</a> is the offical project website, but has become outdated since the project was refunded in August.
+  </p>
+
+  <h2>Tacoma Bonnie</h2>
+  <p>
+    Bonnie was another project I worked on during my internship at MITRE. It is used to test CQMs (Clinical Quality Measures) while they are in development. Teams internal to MITRE also use it to develop patients for systems like popHealth.
+  </p>
+  <p>
+    I was a part of the front-end development team and did the same type of work I did for popHealth, which was convenient since I was on both projects simultaneously. The tech stack is identical to popHealth's, which made learning everything I needed to know easier. I spent more time on developing a Bootstrap theme and maintaining LESS for this project than on thorax development. I spent many hours trying to tame the ever growing amount of messy LESS. Before I left the project, I wrote a CSS/LESS guide that will hopefully help my teammates continue to keep the code in good order.
+  </p>
+  <p>
+    You can check out the source code on <a href="https://github.com/projecttacoma/bonnie">GitHub</a>.
+  </p>
+
+  <h2>Pizza Delivery System</h2>
+  <p>
+    The pizza delivery system was a class project for my first software engineering class my second year of college. It's a fairly generic project, but I am still very proud of the work I did. 
+  </p>
+  <p>
+    I designed and built the entire front end of the system. This was done using Java Swing, which is not the easiest framework to work with as far as UI frameworks are concerned. I tried really hard to get a solid composition and sense of negative versus positive space. The only major downfall of the UI is that all the sizing of elements is hard coded so it is not scalable. 
+  </p>
+  <p>
+    You can download the runnable jar <a href="projects/PDS.jar" class="link">here</a>.
+  </p>
+
+  <h2>JBrick</h2>
+  <p>
+    JBrick is an IDE (Integrated Development Environment) for developing in NXC (Not eXactly C) for the LEGO Mindstorms Robots. It was designed to be highly accessible for the visually impaired on both Windows computers using JAWS and on Macs. The project was lead by Dr. Stephanie Ludi, Chair of the Software Engineering Graduate program at RIT. I believe it was funded by NSF as a part of Project ACE - a program to introduce children, particularly visually impaired kids, to programming, computers, and robotics.
+  </p>
+  <p>
+    The project was initially started as a practicum project for graduate students, but Dr. Ludi decided to give the project to three undergraduate students in order to bring the project to a close. The "back-end" was mostly complete, but the front end was a mess and limited the program so it could only run on x86 versions of Windows. We completely rewrote the UI using Swing to make it cross-platform and fixed any bugs we could find.
+  </p>
+  <p>
+    My contribution was making the system accessible on Macs so everything could be identified by the built-in screen reader. I also worked on displaying errors in the code correctly. I also made it so if you click on the error number, which is displayed as a link, it will put your cursor at the beginning of that line. 
+  </p>
+  <p>
+    This project was a fantastic learning experience, both in a technical way and a nontechnical one. I learned about how IDEs work and how to make Java programs accessible, but I also learned about being on a small team in a workplace environment.
+  </p>
+
+  <p>The source code can be found on <a href="https://code.google.com/p/jbrick/">Google Code</a>.</p>
+
+  <h2>Lego Mindstorms Robotics</h2>
+  <p> 
+    Near the end of my freshman year I got my first job relating to software engineering as a research assistant on Project ACE, a NSF-funded research project to develop robotics workshops to interest children in computing. All development is done in NXC (Not eXactly C) and ROBOTC.
+  </p>
+  <p>
+    I worked on the project for 6 months and had a ball doing it. During that time I built the three robots below as well as a few others. 
+  </p>
+
+  <div id="links" class="img-row-3">
+    <a class="img-col" href="img/coding/catapult.jpg" title="Catapult" data-gallery>
+      <img class="thumbnail" src="img/coding/catapult.jpg">
+    </a>
+    <a class="img-col" href="img/coding/guitar.jpg" title="Guitar" data-gallery>
+      <img class="thumbnail" src="img/coding/guitar.jpg">
+    </a>
+    <a class="img-col" href="img/coding/plinko.jpg" title="Plinko" data-gallery>
+      <img class="thumbnail" src="img/coding/plinko.jpg">
+    </a>
+  </div>
+
+  <p>
+    The catapult was a legacy project, one of the first ones created for Project ACE. I refactored the entire thing to meet our newer code standards and to convert it to using the libraries one of my co-workers wrote. 
+  </p>
+  <p>
+    The guitar was a project I got off of <a href="nxtprograms.com" class="link"> nxtprograms.com</a> and adapted to work for our project. It was origianally written in NXT-G, so I had to convert it to NXC and ROBOTC, which wasn't a simple as it'd seem due to some concurrency tricks I had to employ. I also ended up writing a music note library for ROBOTC. 
+  </p>
+  <p>
+    Finally, the Plinko game was of my own design, and works more or less like the arcade game version.
+  </p>  
+  <p>
+    All these projects and more can be found on <a href="http://code.google.com/p/project-ace/source/browse/" class="link">Google Code</a>.
+  </p>
 </div>
+
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+  <!-- The container for the modal slides -->
+  <div class="slides"></div>
+  <!-- Controls for the borderless lightbox -->
+  <h3 class="title"></h3>
+  <a class="prev"><i class="fa fa-chevron-left"></i></a>
+  <a class="next"><i class="fa fa-chevron-right"></i></a>
+  <a class="close"><i class="fa fa-times"></i></a>
+  <a class="play-pause"></a>
+  <ol class="indicator"></ol>
+  <!-- The modal dialog, which will be used to wrap the lightbox content -->
+  <div class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" aria-hidden="true"><i class="fa fa-times"></i></button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body next"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left prev">
+            <i class="fa fa-chevron-left"></i>
+            Previous
+          </button>
+          <button type="button" class="btn btn-primary next">
+            Next
+            <i class="fa fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

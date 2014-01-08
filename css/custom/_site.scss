@@ -14,6 +14,12 @@ Contents
 
 // 1. Bootstrap Theming
 // --------------------------------------------------
+.blueimp-gallery {
+ .prev, .next {
+    border: none;
+  }
+}
+
 
 .jumbotron {
   background-color: $brand-primary;
@@ -117,6 +123,17 @@ Contents
 // 3. Pages
 // --------------------------------------------------
 
+// Coding Projects Page
+.img-row-3 {
+  @extend .row;
+  margin: 15px 0;
+  .img-col {
+    @include make-sm-column(4);
+    .thumbnail {
+      max-height: 200px;
+    }
+  }
+}
 
 // 4. Shared Styles
 // --------------------------------------------------
@@ -143,21 +160,21 @@ footer {
 
   .img-col {
     @include make-sm-column(3);
-    @include make-sm-column-offset(1.5);
 
     .multi-img {
       margin-top: 5px;
     }
   }
   .text-col {
-    @include make-sm-column(6);
-    
+    @include make-sm-column(8.5);
+    @include make-sm-column-offset(0.5);
+
     h2 {
       margin-top: 0px;
     }
   }
   .no-img {
-    @include make-sm-column(6);
-    @include make-sm-column-offset(4.5);
+    @include make-sm-column(8.5);
+    @include make-sm-column-offset(3.5);
   }
 }
