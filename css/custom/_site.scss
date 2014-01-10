@@ -65,8 +65,10 @@ Contents
 
 // 2. Navigation
 // --------------------------------------------------
+
+
+
 .navbar-default {
-  // @extend .navbar-fixed-top;
   @extend .navbar-static-top;
   @extend .container;
   @extend .col-xs-12;
@@ -119,9 +121,67 @@ Contents
   }
 }
 
+.navbar-collapse {
+  @media (max-width: $screen-tablet) {
+    &.in, &.collapsing {
+      background-color: $gray-darker;
+
+      li.active {
+        a, a:focus, a:hover {
+          color: $brand-primary;
+          background-color: $gray-darker;
+        }
+      }
+    }
+  }
+}
 
 // 3. Pages
 // --------------------------------------------------
+
+// Resume
+
+#resume {
+  font-family: "Gill Sans", Helvetica, Sans-serif;
+  border: solid 1px $gray-darker;
+  padding: 25px 50px 50px;
+  margin-bottom: 15px;
+
+  h1 {
+    border-bottom: solid 2px $gray-darker;
+    font-weight: 200; 
+  }
+
+  h2 {
+    font-weight: 100;
+    font-size: 26px;
+    margin-bottom: 0;
+  }
+  
+  h3 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .resume-content {
+    @extend .row;
+
+    .resume-main {
+      @include make-md-column(9);
+    }
+
+    .resume-side {
+      @include make-md-column(3);
+      text-align: right;
+
+      ul li {
+        list-style-type: none;
+      }
+    }
+  }
+}
 
 // Coding Projects Page
 .img-row-3 {

@@ -571,15 +571,15 @@ pre {
   .container:after, .navbar-default:after {
     clear: both; }
 
-.row, .img-row-3, .img-list {
+.row, #resume .resume-content, .img-row-3, .img-list {
   margin-left: -15px;
   margin-right: -15px; }
-  .row:before, .img-row-3:before, .img-list:before, .row:after, .img-row-3:after, .img-list:after {
+  .row:before, #resume .resume-content:before, .img-row-3:before, .img-list:before, .row:after, #resume .resume-content:after, .img-row-3:after, .img-list:after {
     content: " ";
     /* 1 */
     display: table;
     /* 2 */ }
-  .row:after, .img-row-3:after, .img-list:after {
+  .row:after, #resume .resume-content:after, .img-row-3:after, .img-list:after {
     clear: both; }
 
 .col-xs-1,
@@ -6290,6 +6290,52 @@ Contents
           background-color: white;
           color: #009933;
           border-bottom: none; }
+
+@media (max-width: 768px) {
+  .navbar-collapse.in, .navbar-collapse.collapsing {
+    background-color: #222222; }
+    .navbar-collapse.in li.active a, .navbar-collapse.in li.active a:focus, .navbar-collapse.in li.active a:hover, .navbar-collapse.collapsing li.active a, .navbar-collapse.collapsing li.active a:focus, .navbar-collapse.collapsing li.active a:hover {
+      color: #009933;
+      background-color: #222222; } }
+
+#resume {
+  font-family: "Gill Sans", Helvetica, Sans-serif;
+  border: solid 1px #222222;
+  padding: 25px 50px 50px;
+  margin-bottom: 15px; }
+  #resume h1 {
+    border-bottom: solid 2px #222222;
+    font-weight: 200; }
+  #resume h2 {
+    font-weight: 100;
+    font-size: 26px;
+    margin-bottom: 0; }
+  #resume h3 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0; }
+  #resume .resume-content .resume-main {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 992px) {
+      #resume .resume-content .resume-main {
+        float: left;
+        width: 75%; } }
+  #resume .resume-content .resume-side {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: right; }
+    @media (min-width: 992px) {
+      #resume .resume-content .resume-side {
+        float: left;
+        width: 25%; } }
+    #resume .resume-content .resume-side ul li {
+      list-style-type: none; }
 
 .img-row-3 {
   margin: 15px 0; }
