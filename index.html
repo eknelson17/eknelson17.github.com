@@ -1,18 +1,72 @@
 ---
 layout: default
+title: eknelson17 | Homepage
+banner-title: Hi! I'm Emma.
+banner-content: Technophile, design junkie, hobbyist photographer, avid reader, world traveler, and so much more.
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">    
-      
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<div class="container" role="main">
+  <!-- The below content could really use some reworking...doesn't quite say what I want it to at this point. Just need to work on wording. The content is more or less ok. -->
 
-      <div class="entry">
-        {{ post.content | truncatewords:40}}
+  <div class="jumbotron">
+    <h1>{{page.banner-title}}</h1>
+    <p>{{page.banner-content}}</p>
+  </div>
+
+  <p>
+    I am absolutely in love with technology, and I firmly believe that
+    good design is an integral part of a solid product. With this belief
+    in mind, I have directed my attention to usability, human-computer
+    interaction, and front-end development. I am a software engineer at heart;
+    however, so I understand the underlying implementation of a website
+    or application is just as important as making the UI aesthetically
+    pleasing.
+  </p>
+
+  <p>
+    Check out the other pages to find out more about who I am and what I
+    do. I'm always searching for new opportunites and interesting people
+    with whom to network, so please email me or contact me on any of the
+    social networks linked below.
+  </p>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Checkout My Resume</h3>
+        </div>
+        <div class="panel-body">
+          <p>
+            I'm always looking for new opportunities, so take a look at my <a href="/resume.html">resume</a> to see if I'm the one you're looking for your company!
+          </p>
+        </div>
       </div>
-      
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Current Projects</h3>
+        </div>
+        <div class="panel-body">
+          <p>
+            I'm working at Hubspot in Cambridge as an intern on the UX Team, and I'm absolutely loving it!
+          </p>
+          <p>
+            Also, I'm trying to finish this website redesign, my photos from study abroad, and the backlog of blog posts from my trip (which will hopefully be ported over to the site eventually).
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Contact Me</h3>
+        </div>
+        <div class="panel-body">
+          I love meeting new people, so please email me at eknelson17@gmail.com or message me on any of the social media or social coding sites in the footer.
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

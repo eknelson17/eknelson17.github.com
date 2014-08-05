@@ -4,6 +4,7 @@
 //
 
 // Colors
+$brand-primary: #009933;
 $blue: #4183C4; 
 
 // Grays
@@ -19,9 +20,18 @@ $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
+// Bootstrap variable overrides
+$border-radius-base: 0px;
+$border-radius-large: 0px;
+$border-radius-small: 0px;
+
+$font-size-base: 16px;
+
+$modal-inner-padding: 0;
+
 // Mobile breakpoints
 @mixin mobile {
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: $screen-xs-max) {
     @content;
   }
 }
