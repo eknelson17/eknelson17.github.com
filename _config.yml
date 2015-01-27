@@ -11,10 +11,6 @@ description: User Experience Engineer
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/Emma_Nelson.jpg
 
-#
-# Flags below are optional
-#
-
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble: 
@@ -46,6 +42,11 @@ url: http://eknelson17.com
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
+
+# Collection definitions
+collections:
+  dev-projects:
+    output: true
 
 #
 # !! You don't need to change any of the configuration flags below !!

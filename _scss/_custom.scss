@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {  
   font-weight: 500;
   font-size: 32px;
+  margin-top: 0;
   a {
     color: inherit;
   }
@@ -53,10 +54,6 @@ h3 {
 h4 {  
   font-size: 18px;
   color: $gray;
-}
-
-p {
-  margin: 15px 0;
 }
 
 a {
@@ -137,7 +134,7 @@ img {
 //
 
 .wrapper-header {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 header {
@@ -256,44 +253,32 @@ nav {
   }
 }
 
-.wrapper-footer {
+footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  background-color: $darkGray;
+
+  .container {
+    padding: 20px 0;    
+    
+    & > #copyright {
+      @include make-md-column(4);
+      color: $lightGray;
+      font-size: 10px;
+    }
+
+    .social-icons {
+      @include make-md-column(8);
+      text-align: center;
+    }
+  }
 }
 
-footer {
-  padding: 20px 0;
-  text-align: center;
-}
 
 /*********************/
 /*  BOOSTRAP  THEME  */
 /*********************/
-
-.jumbotron {
-  background: url(/images/Aran_Islands.jpg) no-repeat center center; 
-  background-color: none;
-  color: $white;
-  height: 600px;
-  margin: 0 -10px;
-
-  h1, p {
-    color: $white;
-    margin: 0;
-  }
-
-  @media screen and (max-width: $screen-xs-max) {
-    h1 {
-      font-size: ($font-size-base * 2.5);
-    }
-    
-    p {
-      font-size: ($jumbotron-font-size * 0.9);
-    }
-  }
-}
 
 .panel-default {
   border: none;
@@ -319,3 +304,102 @@ footer {
   margin-top: 0;
 }
 
+
+/*****************/
+/* PAGE SPECIFIC */
+/*****************/
+
+#index {
+  .jumbotron {
+    background: url(/images/Aran_Islands.jpg) no-repeat center center; 
+    background-color: none;
+    color: $white;
+    height: 600px;
+    margin: 0 0 30px;
+
+    h1, p {
+      color: $white;
+      margin: 0;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+      h1 {
+        font-size: ($font-size-base * 2.5);
+      }
+      
+      p {
+        font-size: ($jumbotron-font-size * 0.9);
+      }
+    }
+  }
+}
+
+#resume {
+  border: solid 1px $gray-darker;
+  padding: 25px 50px 50px;
+  margin-bottom: 15px;
+
+  @include mobile {
+    display: none;
+  }
+
+  h1, h2, h3, h4, p, li {
+    font-family: "Gill Sans", Helvetica, Sans-serif; 
+    margin: 0;
+  }
+
+  h1 {
+    border-bottom: solid 2px $brand-primary;
+    font-weight: 200; 
+
+    span {
+      font-weight: 100;
+      font-size: 24px;
+      color: $gray-light;
+      padding-top: 8px;
+    }
+  }
+
+  h2 {
+    font-weight: 100;
+    font-size: 26px;
+    margin-top: 15px;
+  }
+  
+  h3 {
+    color: $darkGray;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  h4 {
+    color: $darkGray;
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  .resume-content {
+    @extend .row;
+
+    .resume-main {
+      @include make-md-column(9);
+      margin-bottom: 0;
+    }
+
+    .resume-side {
+      @include make-md-column(3);
+      @extend .hidden-sm;
+      text-align: right;
+      margin-top: 15px;
+
+      ul li {
+        list-style-type: none;
+      }
+    }
+  }
+}

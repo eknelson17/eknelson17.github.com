@@ -1,7 +1,5 @@
 ---
 layout: default
-title: eknelson17 | Projects
-banner-title: Coding Projects
 ---
 
 <div class="container">
@@ -125,3 +123,21 @@ banner-title: Coding Projects
 </div>
 
 
+
+
+<!-- For after collections stablize
+<div class="posts">
+  {% for project in site.dev-projects %}
+    <article class="post">    
+      
+      <h1><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h1>
+
+      <div class="entry">
+        {{ project.content | truncatewords:40}}
+      </div>
+      
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
+ -->
