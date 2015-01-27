@@ -1396,13 +1396,13 @@ pre {
   .container-fluid:after {
     clear: both; }
 
-.row, #resume .resume-content {
+.row, #resume .resume-content, .img-row-3, .img-list {
   margin-left: -15px;
   margin-right: -15px; }
-  .row:before, #resume .resume-content:before, .row:after, #resume .resume-content:after {
+  .row:before, #resume .resume-content:before, .img-row-3:before, .img-list:before, .row:after, #resume .resume-content:after, .img-row-3:after, .img-list:after {
     content: " ";
     display: table; }
-  .row:after, #resume .resume-content:after {
+  .row:after, #resume .resume-content:after, .img-row-3:after, .img-list:after {
     clear: both; }
 
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
@@ -5585,6 +5585,10 @@ footer {
 .well + p {
   margin-top: 0; }
 
+.media .media-object {
+  border: solid 1px #009933;
+  padding: 4px; }
+
 /*****************/
 /* PAGE SPECIFIC */
 /*****************/
@@ -5659,6 +5663,91 @@ footer {
         width: 25%; } }
     #resume .resume-content .resume-side ul li {
       list-style-type: none; }
+
+.portfolio .portfolio-nav {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0;
+  margin: 0; }
+  @media (min-width: 768px) {
+    .portfolio .portfolio-nav {
+      float: left;
+      width: 25%; } }
+  .portfolio .portfolio-nav li {
+    list-style-type: none;
+    background-color: #404040;
+    margin: 5px 0;
+    padding: 10px; }
+    .portfolio .portfolio-nav li a {
+      color: white; }
+.portfolio .portfolio-main {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 768px) {
+    .portfolio .portfolio-main {
+      float: left;
+      width: 75%; } }
+
+.dev h2:first-child {
+  margin-top: 0; }
+
+.img-row-3 {
+  margin: 15px 0; }
+  .img-row-3 .img-col {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .img-row-3 .img-col {
+        float: left;
+        width: 33.33333%; } }
+    .img-row-3 .img-col .thumbnail {
+      height: 200px; }
+
+.img-list {
+  margin-top: 22px; }
+  .img-list .img-col {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .img-list .img-col {
+        float: left;
+        width: 25%; } }
+    .img-list .img-col .multi-img {
+      margin-top: 5px; }
+  .img-list .text-col {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .img-list .text-col {
+        float: left;
+        width: 70.83333%; } }
+    @media (min-width: 768px) {
+      .img-list .text-col {
+        margin-left: 4.16667%; } }
+    .img-list .text-col h2 {
+      margin-top: 0px; }
+  .img-list .no-img {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .img-list .no-img {
+        float: left;
+        width: 70.83333%; } }
+    @media (min-width: 768px) {
+      .img-list .no-img {
+        margin-left: 29.16667%; } }
 
 /***********************/
 /* SYNTAX HIGHLIGHTING */

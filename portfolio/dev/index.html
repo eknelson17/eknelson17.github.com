@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: portfolio
 ---
 
-<div class="container">
+<div class="dev">
 
   <h2>popHealth</h2>
   <p>
@@ -62,14 +62,14 @@ layout: default
   </p>
 
   <div id="links" class="img-row-3">
-    <a class="img-col" href="img/coding/catapult.jpg" title="Catapult" data-gallery>
-      <img class="thumbnail" src="img/coding/catapult.jpg">
+    <a class="img-col" href="{{ site.baseurl }}/images/dev/catapult.jpg" title="Catapult" data-gallery>
+      <img class="thumbnail" src="{{ site.baseurl }}/images/dev/catapult.jpg">
     </a>
-    <a class="img-col" href="img/coding/guitar.jpg" title="Guitar" data-gallery>
-      <img class="thumbnail" src="img/coding/guitar.jpg">
+    <a class="img-col" href="{{ site.baseurl }}/images/dev/guitar.jpg" title="Guitar" data-gallery>
+      <img class="thumbnail" src="{{ site.baseurl }}/images/dev/guitar.jpg">
     </a>
-    <a class="img-col" href="img/coding/plinko.jpg" title="Plinko" data-gallery>
-      <img class="thumbnail" src="img/coding/plinko.jpg">
+    <a class="img-col" href="{{ site.baseurl }}/images/dev/plinko.jpg" title="Plinko" data-gallery>
+      <img class="thumbnail" src="{{ site.baseurl }}/images/dev/plinko.jpg">
     </a>
   </div>
 
@@ -86,43 +86,6 @@ layout: default
     All these projects and more can be found on <a href="http://code.google.com/p/project-ace/source/browse/" class="link">Google Code</a>.
   </p>
 </div>
-
-<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-  <!-- The container for the modal slides -->
-  <div class="slides"></div>
-  <!-- Controls for the borderless lightbox -->
-  <h3 class="title"></h3>
-  <a class="prev"><i class="fa fa-chevron-left"></i></a>
-  <a class="next"><i class="fa fa-chevron-right"></i></a>
-  <a class="close"><i class="fa fa-times"></i></a>
-  <a class="play-pause"></a>
-  <ol class="indicator"></ol>
-  <!-- The modal dialog, which will be used to wrap the lightbox content -->
-  <div class="modal fade">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" aria-hidden="true"><i class="fa fa-times"></i></button>
-          <h4 class="modal-title"></h4>
-        </div>
-        <div class="modal-body next"></div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default pull-left prev">
-            <i class="fa fa-chevron-left"></i>
-            Previous
-          </button>
-          <button type="button" class="btn btn-primary next">
-            Next
-            <i class="fa fa-chevron-right"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
 
 <!-- For after collections stablize

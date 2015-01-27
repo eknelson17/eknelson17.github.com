@@ -304,6 +304,13 @@ footer {
   margin-top: 0;
 }
 
+.media {
+  .media-object {
+    border: solid 1px $brand-primary;
+    padding: 4px;
+  }
+}
+
 
 /*****************/
 /* PAGE SPECIFIC */
@@ -401,5 +408,71 @@ footer {
         list-style-type: none;
       }
     }
+  }
+}
+
+// Portfolio Pages
+.portfolio {
+  .portfolio-nav {
+    @include make-sm-column(3);
+    padding: 0;
+    margin: 0;
+
+    li {
+      list-style-type: none;
+      background-color: $darkGray;
+      margin: 5px 0;
+      padding: 10px;
+      a {
+        color: $white;
+      }
+    }
+  }
+  .portfolio-main {
+    @include make-sm-column(9);
+  }
+}
+
+// Coding Projects Page
+.dev h2:first-child {
+  margin-top: 0;
+}
+
+.img-row-3 {
+  @extend .row;
+  margin: 15px 0;
+
+  .img-col {
+    @include make-sm-column(4);
+
+    .thumbnail {
+      height: 200px;
+    }
+  }
+}
+
+// Shared
+.img-list {
+  @extend .row;
+  margin-top: 22px;
+
+  .img-col {
+    @include make-sm-column(3);
+
+    .multi-img {
+      margin-top: 5px;
+    }
+  }
+  .text-col {
+    @include make-sm-column(8.5);
+    @include make-sm-column-offset(0.5);
+
+    h2 {
+      margin-top: 0px;
+    }
+  }
+  .no-img {
+    @include make-sm-column(8.5);
+    @include make-sm-column-offset(3.5);
   }
 }
