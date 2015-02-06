@@ -1,7 +1,77 @@
-# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
-name: Profile Site
-markdown: redcarpet
-pygments: true
-paginate: 10 # pagination basted on number of posts
-exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scss', 'bootstrap.scss'] # files to exclude
+#
+# This file contains configuration flags to customize your site
+#
 
+# Name of your site (displayed in the header)
+name: Emma Nelson
+
+# Short bio or description (displayed in the header)
+description: User Experience Engineer
+
+# URL of your avatar or profile pic (you could use your GitHub profile pic)
+avatar: /images/Emma_Nelson.jpg
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble: 
+  email: eknelson17@gmail.com
+  facebook: eknelson17
+  flickr: eknelson17
+  github: eknelson17
+  instagram: 
+  linkedin: eknelson17
+  pinterest: eknelson17
+  rss: eknelson17 # just type anything here for a working RSS icon, make sure you set the "url" below!
+  twitter: eknelson17
+
+# Your disqus shortname, entering this will enable commenting on posts
+disqus: 
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: UA-39682379-1
+
+# Enter your Hubspot Analytics web portal code (e.g. 411392) to activate tracking
+hubspot_analytics: 411392
+
+# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Used for Sitemap.xml and your RSS feed
+url: http://eknelson17.com
+
+# If you're hosting your site at a Project repository on GitHub pages 
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+baseurl: ""
+
+# Collection definitions
+collections:
+  dev-projects:
+    output: true
+
+#
+# !! You don't need to change any of the configuration flags below !!
+#
+
+markdown: kramdown
+highlighter: pygments
+permalink: /:title
+
+# The release of Jekyll Now that you're using
+version: v1.0.0
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  sass_dir: _scss
+  style: :expanded # You might prefer to minify using :compressed
+
+# Use the following plug-ins
+gems:
+  - jemoji # Emoji please!
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+
+# Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md

@@ -1,29 +1,19 @@
-<nav class="navbar navbar-default" role="navigation">
-   <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-      <span class="sr-only">Toggle navigation</span>
-      <!-- <i class="fa fa-align-justify fa-2x"></i> -->
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="index.html"><img src="img/Logo.png" alt="eknelson17" style=""></a>
+<div id="#top" class="wrapper-header">
+  <div class="container">
+    <header class="clearfix">
+      <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+      
+      <div class="site-info">
+        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+        <p class="site-description">{{ site.description }}</p>
+      </div>
+      
+      <nav>
+        <a href="{{ site.baseurl }}/about">About</a>
+        <a href="{{ site.baseurl }}/resume">Resume</a>
+        <a href="{{ site.baseurl }}/portfolio">Portfolio</a>
+        <!-- <a href="{{ site.baseurl }}/blog">Blog</a> -->
+      </nav>
+    </header>
   </div>
-
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="main-nav">
-    <ul class="nav navbar-nav">
-      <li {% if page.title == 'eknelson17 | About' %} class="active" {% endif %}><a href="about.html" >About</a></li>
-      <li {% if page.title == 'eknelson17 | Resume' %} class="active" {% endif %}><a href="resume.html">Resume</a></li>
-      <li class="dropdown {% if page.title == 'eknelson17 | Projects' %} active {% endif %}">
-        <a class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="coding.html">Coding</a></li>
-          <li><a href="ui.html">User Interface</a></li>
-          <li><a href="design.html">Design</a></li>
-          <li><a href="photography.html">Photography</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div><!-- /.navbar-collapse -->
-</nav>
+</div>

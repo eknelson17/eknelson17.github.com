@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 	<head>
 		<meta charset="utf-8"/>
@@ -18,23 +19,25 @@
 		<link rel="shortcut icon" href="ico/favicon.png">
 	</head>
 	<body>
+=======
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+>>>>>>> jekyll-update
 
-    <nav role="navigation">
-    	{% include header.html %}
-    </nav>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
 
-		<header role="banner">
-			<div class="jumbotron">
-			  <div class="container">
-			  	<!-- <img src="img/emma_photograph.jpg" class="pull-left"> -->
-			    <h1>{{page.banner-title}}</h1>
-			    <p>{{page.banner-content}}</p>
-			  </div>
-			</div>
-		</header>
+    <meta name="author" content="{{ site.name }}" />
+    <meta name="description" content="{{ site.description }}">
 
-		{{ content }}
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
+<<<<<<< HEAD
 		<footer role="contentinfo">
 			{% include footer.html %}
 		</footer>
@@ -71,3 +74,20 @@
 		<!-- End of Async HubSpot Analytics Code -->
 	</body>
 </html>
+=======
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css" />
+  </head>
+
+  <body>
+    {% include header.html %}
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+    
+    {% include analytics.html %}
+  </body>
+</html>
+>>>>>>> jekyll-update
