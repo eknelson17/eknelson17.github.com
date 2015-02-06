@@ -1,33 +1,10 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="en">
-	<head>
-		<meta charset="utf-8"/>
-		<meta name="description" content="Personal website for Emma Kay Nelson (@eknelson17) to showcase her work and promote her brand."</meta>
-		</meta>
-		<title>{% if page.title %} {{ page.title }} {% endif %}</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive site -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!-- chrome frame -->
-		<meta name="viewport" content="user-scalable=no"> <!-- prevents browser zoom on small devices -->
-		<link rel="author" href="humans.txt">
-		<meta name="description" content="Emma Nelson's Profile Website">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-		<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-		<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
-		<link rel="stylesheet" href="css/styles.css">
-	    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-		<link rel="shortcut icon" href="ico/favicon.png">
-	</head>
-	<body>
-=======
 <html>
   <head>
     <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
->>>>>>> jekyll-update
-
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
 
     <meta name="author" content="{{ site.name }}" />
@@ -37,44 +14,6 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-<<<<<<< HEAD
-		<footer role="contentinfo">
-			{% include footer.html %}
-		</footer>
-
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-		<script>if (!window.jQuery) {document.write('<script src="/js/jquery.min.js"><\/script>');}</script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-		<script src="js/bootstrap-image-gallery.min.js"></script>
-		<!--<script src="js/scripts.min.js"></script>-->
-		<script src="js/custom.js"></script>
-
-		<!-- Google Analytics Code -->
-	  <script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-39682379-1', 'eknelson17.com');
-		  ga('send', 'pageview');
-		</script>
-		<!-- End of Google Analytics Code -->
-
-		<!-- Start of Async HubSpot Analytics Code -->
-    <script type="text/javascript">
-        (function(d,s,i,r) {
-            if (d.getElementById(i)){return;}
-            var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
-            n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/411392.js';
-            e.parentNode.insertBefore(n, e);
-        })(document,"script","hs-analytics",300000);
-    </script>
-		<!-- End of Async HubSpot Analytics Code -->
-	</body>
-</html>
-=======
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css" />
   </head>
 
@@ -88,6 +27,18 @@
     {% include footer.html %}
     
     {% include analytics.html %}
+
+    <!-- Google Analytics Code -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-39682379-1', 'eknelson17.com');
+      ga('send', 'pageview');
+    </script>
+    <!-- End of Google Analytics Code -->
+    
   </body>
 </html>
->>>>>>> jekyll-update
