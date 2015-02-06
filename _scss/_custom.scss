@@ -262,15 +262,15 @@ footer {
   .container {
     padding: 20px 0;    
     
-    & > #copyright {
-      @include make-md-column(4);
+    .info {
       color: $lightGray;
       font-size: 10px;
+      line-height: 36px; 
     }
 
-    .social-icons {
-      @include make-md-column(8);
-      text-align: center;
+    #top-link {
+      @extend .pull-right;
+      text-decoration: underline;
     }
   }
 }
