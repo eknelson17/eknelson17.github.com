@@ -1287,7 +1287,7 @@ blockquote {
 
 .blockquote-reverse,
 blockquote.pull-right,
-footer .container blockquote#top-link {
+footer .container .info blockquote#top-link {
   padding-right: 15px;
   padding-left: 0;
   border-right: 5px solid #eeeeee;
@@ -1297,21 +1297,21 @@ footer .container blockquote#top-link {
   .blockquote-reverse small:before,
   .blockquote-reverse .small:before,
   blockquote.pull-right footer:before,
-  footer .container blockquote#top-link footer:before,
+  footer .container .info blockquote#top-link footer:before,
   blockquote.pull-right small:before,
-  footer .container blockquote#top-link small:before,
+  footer .container .info blockquote#top-link small:before,
   blockquote.pull-right .small:before,
-  footer .container blockquote#top-link .small:before {
+  footer .container .info blockquote#top-link .small:before {
     content: ''; }
   .blockquote-reverse footer:after,
   .blockquote-reverse small:after,
   .blockquote-reverse .small:after,
   blockquote.pull-right footer:after,
-  footer .container blockquote#top-link footer:after,
+  footer .container .info blockquote#top-link footer:after,
   blockquote.pull-right small:after,
-  footer .container blockquote#top-link small:after,
+  footer .container .info blockquote#top-link small:after,
   blockquote.pull-right .small:after,
-  footer .container blockquote#top-link .small:after {
+  footer .container .info blockquote#top-link .small:after {
     content: '\00A0 \2014'; }
 
 blockquote:before,
@@ -2934,7 +2934,7 @@ tbody.collapse.in {
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box; }
-  .dropdown-menu.pull-right, footer .container .dropdown-menu#top-link {
+  .dropdown-menu.pull-right, footer .container .info .dropdown-menu#top-link {
     right: 0;
     left: auto; }
   .dropdown-menu .divider {
@@ -3001,7 +3001,7 @@ tbody.collapse.in {
   top: 0;
   z-index: 990; }
 
-.pull-right > .dropdown-menu, footer .container #top-link > .dropdown-menu {
+.pull-right > .dropdown-menu, footer .container .info #top-link > .dropdown-menu {
   right: 0;
   left: auto; }
 
@@ -4201,7 +4201,7 @@ a.thumbnail.active {
 
 .media > .pull-left {
   margin-right: 10px; }
-.media > .pull-right, footer .container .media > #top-link {
+.media > .pull-right, footer .container .info .media > #top-link {
   margin-left: 10px; }
 
 .media-list {
@@ -5149,7 +5149,7 @@ button.close {
   margin-left: auto;
   margin-right: auto; }
 
-.pull-right, footer .container #top-link {
+.pull-right, footer .container .info #top-link {
   float: right !important; }
 
 .pull-left {
@@ -5301,7 +5301,7 @@ button.close {
     display: inline-block !important; } }
 
 @media (max-width: 767px) {
-  .hidden-xs {
+  .hidden-xs, footer .container .info {
     display: none !important; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .hidden-sm, #resume .resume-content .resume-side {
@@ -5547,12 +5547,15 @@ footer {
   background-color: #404040; }
   footer .container {
     padding: 20px 0; }
+    @media screen and (max-width: 767px) {
+      footer .container .social-icons {
+        text-align: center; } }
     footer .container .info {
       color: #eeeeee;
       font-size: 10px;
       line-height: 36px; }
-    footer .container #top-link {
-      text-decoration: underline; }
+      footer .container .info #top-link {
+        text-decoration: underline; }
 
 /*********************/
 /*  BOOSTRAP  THEME  */

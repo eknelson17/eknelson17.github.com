@@ -262,15 +262,22 @@ footer {
   .container {
     padding: 20px 0;    
     
+    .social-icons {
+      @include mobile {
+        text-align: center;
+      }
+    }
+
     .info {
+      @extend .hidden-xs;
       color: $lightGray;
       font-size: 10px;
       line-height: 36px; 
-    }
 
-    #top-link {
-      @extend .pull-right;
-      text-decoration: underline;
+      #top-link {
+        @extend .pull-right;
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -329,7 +336,7 @@ footer {
       margin: 0;
     }
 
-    @media screen and (max-width: $screen-xs-max) {
+    @include mobile {
       h1 {
         font-size: ($font-size-base * 2.5);
       }

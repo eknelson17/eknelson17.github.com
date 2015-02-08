@@ -21,7 +21,7 @@ footer-links:
   instagram: 
   linkedin: eknelson17
   pinterest: eknelson17
-  rss: eknelson17 # just type anything here for a working RSS icon, make sure you set the "url" below!
+  rss:  # just type anything here for a working RSS icon, make sure you set the "url" below!
   twitter: eknelson17
 
 # Your disqus shortname, entering this will enable commenting on posts
@@ -29,9 +29,6 @@ disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-39682379-1
-
-# Enter your Hubspot Analytics web portal code (e.g. 411392) to activate tracking
-hubspot_analytics: 411392
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
@@ -66,8 +63,8 @@ sass:
 
 # Use the following plug-ins
 gems:
-  - jemoji # Emoji please!
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+#  - jemoji # Emoji please!
+#  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 
 # Exclude these files from your production _site
 exclude:
