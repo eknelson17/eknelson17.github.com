@@ -1,0 +1,69 @@
+#resume {
+  border: solid 1px $gray-darker;
+  padding: 25px 50px 50px;
+  margin-bottom: 15px;
+
+  @include mobile {
+    display: none;
+  }
+
+  h1, h2, h3, h4, p, li {
+    font-family: "Gill Sans", Helvetica, Sans-serif; 
+    margin: 0;
+  }
+
+  h1 {
+    border-bottom: solid 2px $brand-primary;
+    font-weight: 200; 
+
+    span {
+      font-weight: 100;
+      font-size: 24px;
+      color: $gray-light;
+      padding-top: 8px;
+    }
+  }
+
+  h2 {
+    font-weight: 100;
+    font-size: 26px;
+    margin-top: 15px;
+  }
+  
+  h3 {
+    color: $darkGray;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  h4 {
+    color: $darkGray;
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  .resume-content {
+    @extend .row;
+
+    .resume-main {
+      @include make-md-column(9);
+      margin-bottom: 0;
+    }
+
+    .resume-side {
+      @include make-md-column(3);
+      @extend .hidden-sm;
+      text-align: right;
+      margin-top: 15px;
+
+      ul li {
+        list-style-type: none;
+      }
+    }
+  }
+}

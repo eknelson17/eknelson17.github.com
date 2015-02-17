@@ -7,8 +7,16 @@
 @import "_bootstrap";
 // Syntax highlighting @import is at the bottom of this file
 
-@import "_custom";
+@import "_base";
+@import "_layout";
+@import "_theme";
+
+// Page or Seciotn Specific
+@import "_home";
+@import "_resume";
+@import "_portfolio";
+// @import "_blog";
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "_highlights";
+// @import "_highlights";

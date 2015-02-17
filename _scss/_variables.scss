@@ -35,3 +35,9 @@ $modal-inner-padding: 0;
     @content;
   }
 }
+
+@mixin non-mobile {
+  @media screen and (min-width: $screen-xs-max) {
+    @content;
+  }
+}

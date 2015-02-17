@@ -1,0 +1,41 @@
+/*********************/
+/*  BOOSTRAP  THEME  */
+/*********************/
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.panel-default {
+  border: none;
+  @include box-shadow(none);
+
+   .panel-heading {
+    color: $gray-darker;
+    background-color: $white;
+    border-color: $brand-primary;
+    border-width: 2px;
+  }
+}
+
+.well {
+  background-color: $white;
+  padding: 10px; 
+  margin: 0 15px 10px 0;
+  border-color: $gray-darker;
+  border-width: 2px;
+}
+
+.well + p {
+  margin-top: 0;
+}
+
+.media {
+  .media-object {
+    border: solid 1px $brand-primary;
+    padding: 4px;
+  }
+}

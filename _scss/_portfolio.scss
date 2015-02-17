@@ -1,0 +1,118 @@
+// Portfolio Index
+.portfolio-index {
+  .portfolio-nav {
+    margin-top: 60px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    li {
+      @include make-sm-column(3);
+      padding-left: 0;
+      margin-bottom: 20px;
+
+      @include mobile {
+        max-width: 470px;
+        margin: 0 auto 10px;
+      }
+
+      .nav-box {
+        background-color: $darkGray;
+        &:hover {
+          background-color: $brand-primary;
+        }
+      }
+
+      a {
+        color: $white;
+        display: block;
+        text-align: center;
+        padding: 10px;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        p {
+          margin: 10px 0 0;
+        }
+      }
+    }
+
+    &:last-child {
+      padding: 0;
+    }
+  }
+}
+
+// Portfolio Sub-pages
+#main .portfolio {
+  margin-top: 0;
+}
+
+.portfolio {
+  .portfolio-nav {
+    @include make-sm-column(2);
+
+    // @include non-mobile {
+    //   nav {
+    //     @extend .affix;
+    //     position: static;
+    //   }
+    // }
+
+    nav {
+      margin-top: 0;
+
+        @extend .affix;
+        position: static;
+
+      @include mobile {
+        text-align: center;
+        margin: -10px 0 20px 0;
+      }
+
+      a {
+        display: block;
+        margin: 0;
+
+        @include mobile {
+          display: inline;
+          margin: 0 10px;
+        }
+      }
+
+      ul {
+        @extend .hidden-xs;
+        list-style-type: none;
+        margin: 0 0 10px;
+
+        li {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .portfolio-main {
+    @include make-sm-column(10);
+  }
+}
+
+
+// Coding Projects Page
+.dev h2:first-child {
+  margin-top: 0;
+}
+
+.img-row-3 {
+  @extend .row;
+  margin: 15px 0;
+
+  .img-col {
+    @include make-sm-column(4);
+
+    .thumbnail {
+      height: 200px;
+    }
+  }
+}

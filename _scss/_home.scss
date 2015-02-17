@@ -1,0 +1,24 @@
+#index {
+  .jumbotron {
+    background: url(/images/Aran_Islands.jpg) no-repeat center center; 
+    background-color: none;
+    color: $white;
+    height: 600px;
+    margin: 0 0 30px;
+
+    h1, p {
+      color: $white;
+      margin: 0;
+    }
+
+    @include mobile {
+      h1 {
+        font-size: ($font-size-base * 2.5);
+      }
+      
+      p {
+        font-size: ($jumbotron-font-size * 0.9);
+      }
+    }
+  }
+}
