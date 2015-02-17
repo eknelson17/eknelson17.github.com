@@ -1,10 +1,13 @@
 ---
 layout: portfolio
+type: dev
 ---
 
 <div class="dev">
+<!-- TODO Add Senior Project -->
+<!-- TODO Add EpochTrackr -->
 
-  <h2>popHealth</h2>
+  <h2 id="#popHealth">popHealth</h2>
   <p>
     "popHealth is an open source reference implementation software service that automates the reporting of Meaningful Use quality measures. popHealth integrates with a healthcare provider’s electronic health record (EHR) system using continuity of care records. popHealth streamlines the automated generation of summary quality measure reports on the provider’s patient population." - <a href="http://projectpophealth.org">projectpophealth.org</a>
   </p>
@@ -15,7 +18,7 @@ layout: portfolio
     You can check out the source code on <a href="http://github.com/pophealth/popHealth">GitHub</a>. <a href="http://projectpophealth.org">projectpophealth.org</a> is the offical project website, but has become outdated since the project was refunded in August.
   </p>
 
-  <h2>Tacoma Bonnie</h2>
+  <h2 id="#bonnie">Tacoma Bonnie</h2>
   <p>
     Bonnie was another project I worked on during my internship at MITRE. It is used to test CQMs (Clinical Quality Measures) while they are in development. Teams internal to MITRE also use it to develop patients for systems like popHealth.
   </p>
@@ -26,18 +29,7 @@ layout: portfolio
     You can check out the source code on <a href="https://github.com/projecttacoma/bonnie">GitHub</a>.
   </p>
 
-  <h2>Pizza Delivery System</h2>
-  <p>
-    The pizza delivery system was a class project for my first software engineering class my second year of college. It's a fairly generic project, but I am still very proud of the work I did.
-  </p>
-  <p>
-    I designed and built the entire front end of the system. This was done using Java Swing, which is not the easiest framework to work with as far as UI frameworks are concerned. I tried really hard to get a solid composition and sense of negative versus positive space. The only major downfall of the UI is that all the sizing of elements is hard coded so it is not scalable.
-  </p>
-<!--   <p>
-    You can download the runnable jar <a href="projects/PDS.jar" class="link">here</a>.
-  </p>
- -->
-  <h2>JBrick</h2>
+  <h2 id="jBrick">JBrick</h2>
   <p>
     JBrick is an IDE (Integrated Development Environment) for developing in NXC (Not eXactly C) for the LEGO Mindstorms Robots. It was designed to be highly accessible for the visually impaired on both Windows computers using JAWS and on Macs. The project was lead by Dr. Stephanie Ludi, Chair of the Software Engineering Graduate program at RIT. I believe it was funded by NSF as a part of Project ACE - a program to introduce children, particularly visually impaired kids, to programming, computers, and robotics.
   </p>
@@ -53,7 +45,7 @@ layout: portfolio
 
   <p>The source code can be found on <a href="https://code.google.com/p/jbrick/">Google Code</a>.</p>
 
-  <h2>Lego Mindstorms Robotics</h2>
+  <h2 id="legos">Lego Mindstorms Robotics</h2>
   <p>
     Near the end of my freshman year I got my first job relating to software engineering as a research assistant on Project ACE, a NSF-funded research project to develop robotics workshops to interest children in computing. All development is done in NXC (Not eXactly C) and ROBOTC.
   </p>
@@ -86,21 +78,3 @@ layout: portfolio
     All these projects and more can be found on <a href="http://code.google.com/p/project-ace/source/browse/" class="link">Google Code</a>.
   </p>
 </div>
-
-
-<!-- For after collections stablize
-<div class="posts">
-  {% for project in site.dev-projects %}
-    <article class="post">    
-      
-      <h1><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h1>
-
-      <div class="entry">
-        {{ project.content | truncatewords:40}}
-      </div>
-      
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
- -->

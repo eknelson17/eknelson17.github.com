@@ -3,12 +3,43 @@ layout: default
 ---
 
 <article class="portfolio">
-  <ul class="portfolio-nav">
-    <li><a href="{{ site.baseurl }}/portfolio/dev">Software Development Projects</a></li>
-    <li><a href="{{ site.baseurl }}/portfolio/ui-design">User Interface Design Projects</a></li>
-    <li><a href="{{ site.baseurl }}/portfolio/print-design">Print Projects</a></li>
-    <li><a href="{{ site.baseurl }}/portfolio/photography">Photography</a></li>
-  </ul>
+  <div class="portfolio-nav">
+    <nav data-spy="affix"> 
+      <a href="{{ site.baseurl }}/portfolio/dev" {% if page.type == 'dev' %} class="active" {% endif %}>Programming</a>
+      {% if page.type == 'dev' %}
+        <ul>
+          <!-- <li><a href="#coopEval">Co-op Evaluation System</a></li>
+          <li><a href="#epoch">epochTracker</a></li> -->
+          <li><a href="#popHealth">popHealth</a></li>
+          <li><a href="#bonnie">Tacoma Bonnie</a></li>
+          <li><a href="#jBrick">JBrick</a></li>
+          <li><a href="#legos">Lego Mindstorms Workshops</a></li>
+        </ul>
+      {% endif %}
+
+      <!-- <a href="{{ site.baseurl }}/portfolio/ui-design"{% if page.type == 'ui' %} class="active" {% endif %}>UI Design</a>
+      {% if page.type == 'ui' %}
+        <ul>
+          <li><a href="#popHealth">popHealth</a></li>
+          <li><a href="#bonnie">Tacoma Bonnie</a></li>
+          <li><a href="#jBrick">JBrick</a></li>
+          <li><a href="#legos">Lego Mindstorms Workshops</a></li>
+        </ul>
+      {% endif %}
+
+      <a href="{{ site.baseurl }}/portfolio/print-design" {% if page.type == 'print' %} class="active" {% endif %}>Print</a>
+      {% if page.type == 'print' %}
+        <ul>
+          <li><a href="#popHealth">popHealth</a></li>
+          <li><a href="#bonnie">Tacoma Bonnie</a></li>
+          <li><a href="#jBrick">JBrick</a></li>
+          <li><a href="#legos">Lego Mindstorms Workshops</a></li>
+        </ul>
+      {% endif %}
+
+      <a href="{{ site.baseurl }}/portfolio/photography" {% if page.type == 'photo' %} class="active" {% endif %}>Photography</a> -->
+    </nav>
+  </div>
 
   <div class="portfolio-main">
     {{ content }}
