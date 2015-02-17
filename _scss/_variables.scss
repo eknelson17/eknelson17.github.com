@@ -41,3 +41,9 @@ $modal-inner-padding: 0;
     @content;
   }
 }
+
+@mixin screen-sm {
+  @media screen and (max-width: $screen-sm-max) {
+    @content;
+  }
+}

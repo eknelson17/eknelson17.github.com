@@ -5723,6 +5723,9 @@ ul ul, ol ul {
     .portfolio .portfolio-nav {
       float: left;
       width: 16.66667%; } }
+  @media screen and (max-width: 991px) {
+    .portfolio .portfolio-nav {
+      padding-right: 0; } }
   .portfolio .portfolio-nav nav {
     margin-top: 0;
     position: static; }

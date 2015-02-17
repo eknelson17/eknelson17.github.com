@@ -53,6 +53,10 @@
 .portfolio {
   .portfolio-nav {
     @include make-sm-column(2);
+    
+    @include screen-sm {
+      padding-right: 0;
+    }
 
     // @include non-mobile {
     //   nav {
