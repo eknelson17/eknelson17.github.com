@@ -1,31 +1,10 @@
 // $(document).ready(function(){
 //     /* activate sidebar */
-//   // $('#portfolio-nav nav').affix({
-//   //   offset: {
-//   //     top: 122
-//   //   }
-//   // });
-
-//   /* activate scrollspy menu */
-//   // var $body   = $(document.body);
-//   // var navHeight = $('.navbar').outerHeight(true) + 10;
-
-//   // $body.scrollspy({
-//   //   target: '.portfolio-nav nav',
-//   //   offset: navHeight
-//   // });
-
-//   // /* smooth scrolling sections */
-//   // $('a[href*=#]:not([href=#])').click(function() {
-//   //     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-//   //       var target = $(this.hash);
-//   //       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-//   //       if (target.length) {
-//   //         $('html,body').animate({
-//   //           scrollTop: target.offset().top - 50
-//   //         }, 1000);
-//   //         return false;
-//   //       }
-//   //     }
-//   // });
-// });
+//   $('.pnav').affix({
+//     offset: {
+//       top: 112,
+//       bottom: function () {
+//         return (this.bottom = $('footer').outerHeight(true))
+//       }
+//     }
+//   })

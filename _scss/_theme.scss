@@ -2,6 +2,17 @@
 /*  BOOSTRAP  THEME  */
 /*********************/
 
+ul.affix {
+  position: fixed; 
+  top: 20px;
+}
+ul.affix-top {
+  position: static;
+}
+ul.affix-bottom {
+  position: absolute;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1024px;

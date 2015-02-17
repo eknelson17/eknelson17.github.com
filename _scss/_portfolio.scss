@@ -53,23 +53,13 @@
 .portfolio {
   .portfolio-nav {
     @include make-sm-column(2);
-    
+
     @include screen-sm {
       padding-right: 0;
     }
 
-    // @include non-mobile {
-    //   nav {
-    //     @extend .affix;
-    //     position: static;
-    //   }
-    // }
-
     nav {
       margin-top: 0;
-
-        @extend .affix;
-        position: static;
 
       @include mobile {
         text-align: center;
@@ -79,19 +69,24 @@
       a {
         display: block;
         margin: 0;
-
-        @include mobile {
-          display: inline;
-          margin: 0 10px;
-        }
       }
 
       ul {
-        @extend .hidden-xs;
         list-style-type: none;
         margin: 0 0 10px;
 
-        li {
+        @include mobile {
+          position: static;
+          li {
+            display: inline;
+            margin: 0 10px;
+          }
+          ul {
+            display: none;
+          }
+        }
+
+        ul li {
           font-size: 12px;
         }
       }
@@ -104,7 +99,7 @@
 
 
 // Coding Projects Page
-.dev h2:first-child {
+.portfolio h2:first-child {
   margin-top: 0;
 }
 
